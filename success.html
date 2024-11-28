@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <!-- Google Font for modern feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Body and Background */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc); /* Vibrant Gradient */
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        /* Header */
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraph */
+        p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        .button {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            color: #fff;
+            background-color: #ff5c8d; /* New Button Color */
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover Effect for Button */
+        .button:hover {
+            background-color: #ff3b6b;
+            transform: translateY(-2px);
+        }
+
+        /* Styling the countdown message */
+        .countdown {
+            font-size: 1.1rem;
+            margin-top: 15px;
+            color: #f1f1f1;
+        }
+
+        /* Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    <script>
+        // Automatically redirect to the index page after 5 seconds
+        setTimeout(function () {
+            window.location.href = 'index.html';
+        }, 15000); // 
+    </script>
+</head>
+<body>
+
+    <h1>Registration Successful!</h1>
+    <p>Thank you! Your registration has been successfully received.</p>
+    <p class="countdown">You will be redirected to the home page in 15 seconds...</p>
+
+    <!-- Redirect Button -->
+    <a href="index.html" class="button">Go to Home Page</a>
+
+</body>
+</html>
+
+
